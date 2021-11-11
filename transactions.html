@@ -13,14 +13,14 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">LumenPay</a>
+          <a class="navbar-brand" href="index.html">LumenPay</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse my-2" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="transactions.html">Transactions</a>
+                <a class="nav-link" aria-current="page" href="transactions">Transactions</a>
               </li>
               <!-- <li class="nav-item">
                 <a class="nav-link" href="#">Features</a>
@@ -30,32 +30,16 @@
         </div>
       </nav>
     <section class="fore d-flex align-items-center">
-        <div class="container">
-            <div class="row justify-content-lg-center align-items-lg-center">
-                <div class="col-lg-10 text-center">
-                    <div class="text-center container">
-                        <h3 class="h4 fore-header">
-                            <!-- <strong>Pay your employees or get paid working from anywhere in Africa</strong> -->
-                            Pay your employees or get paid working from anywhere in Africa
-                        </h3>
-                        <p class="fore-subtitle pt-3">
-                            Eliminate costs & compliance barriers when paying your employees across the region
-                        </p>
-
-                         <!-- <div class="pt-4">
-                            <a class="typeform-share button" href="https://form.typeform.com/to/PqWtP4tg?typeform-medium=embed-snippet" data-mode="popup" 
-                            style="display:inline-block;text-decoration:none;background-color:#EC7507;color:white;cursor:pointer;font-family:Helvetica,Arial,sans-serif;font-size:23px;line-height:57.5px;text-align:center;margin:0;height:57.5px;padding:0px 38px;border-radius:28px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;" 
-                            data-size="100" target="_blank">Join community 
-                            </a> 
-                            <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() 
-                            </script>
-                        </div> -->
-                
-
-                    </div>
-                </div>
+        <div class="container pt-2 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+            <h1 class="h3 fore-header">Stellar Log</h1>
+            <div class="fore-subtitle pt-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+                <p class="lead">Welcome. To view All your rececent transactions click the button below </p>
+              </div>
+            <div>
+                <ul id="transactions" class="list-group">
+                </ul>
+                <button type="button" class="btn btn-primary  " onClick="handleFetchTransactions()">Fetch Transactions</button>
             </div>
-    
         </div>
     </section>
 
